@@ -104,13 +104,13 @@ class DataType:
     def _datetime(self) -> list:
         current_dt = datetime.now()
         for _ in range(self.count):
-            self.data_list.append(current_dt.strftime('%Y-%m-%d %H:%M:%S.%f')[:3])
+            self.data_list.append(current_dt.strftime('%Y-%m-%d %H:%M:%S.%f')[:-3])
         return self.data_list
 
     def _timestamp(self) -> list:
         current_dt = datetime.now()
         for _ in range(self.count):
-            self.data_list.append(current_dt.strftime('%Y-%m-%d %H:%M:%S.%f')[:3])
+            self.data_list.append(current_dt.strftime('%Y-%m-%d %H:%M:%S.%f')[:-3])
         return self.data_list
 
     def _time(self) -> list:
@@ -240,37 +240,37 @@ class DataType:
 
     # Spatial Data Types - TODO
     def _geometry(self) -> list:
-        print("Currently Not Support")
+        print("Currently spatial Data type is not support")
         return ValueError
         return list(self.data)
 
     def _point(self) -> list:
-        print("Currently Not Support")
+        print("Currently spatial Data type is not support")
         return ValueError
         return list(self.data)
 
     def _linestring(self) -> list:
-        print("Currently Not Support")
+        print("Currently spatial Data type is not support")
         return ValueError
         return list(self.data)
 
     def _polygon(self) -> list:
-        print("Currently Not Support")
+        print("Currently spatial Data type is not support")
         return ValueError
         return list(self.data)
 
     def _multipoint(self) -> list:
-        print("Currently Not Support")
+        print("Currently spatial Data type is not support")
         return ValueError
         return list(self.data)
 
     def _multilinestring(self) -> list:
-        print("Currently Not Support")
+        print("Currently spatial Data type is not support")
         return ValueError
         return list(self.data)
 
     def _multipolygon(self) -> list:
-        print("Currently Not Support")
+        print("Currently spatial Data type is not support")
         return ValueError
         return list(self.data)
 

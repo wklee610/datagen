@@ -1,8 +1,10 @@
 # Datapush
 
-Datapush is a Python package that generate data to MySQL Database directly.
+Datapush is a Python package that generate data to MySQL Database dynamically.  
 
 When you need data for MySQL for some reasons (for test), and too lazy to make mock data, here is the answer.  
+
+***Just enter your table, datapush will check each column and automatically generate the appropriate data!***
 
 ## Download
 
@@ -30,7 +32,7 @@ generator.generate(
 )
 ```
 
-## Extra Option
+## Option
 In generator.generate(), there has several options.
 
     Args:
@@ -52,5 +54,6 @@ generator.generate(
 )
 ```
 
-
+## Note
+Currently, we don't support spartial data type (geometry, point, polygon etc...)
 
